@@ -1,5 +1,5 @@
 hours = 2
-seconds = 3600
-convert_to_seconds = hours * seconds
+second = 3600
+seconds = hours * second
 
-print(f"{hours} hour(s) is {convert_to_seconds} seconds")
+print(f"{hours} hour(s) is {seconds} seconds")
