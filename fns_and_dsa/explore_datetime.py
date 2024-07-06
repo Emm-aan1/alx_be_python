@@ -14,5 +14,6 @@ def calculate_future_date(current):
 
     print(f"Future date: {future_date.strftime('%Y-%m-%d')}")
 
+
 # display_current_datetime()
 calculate_future_date(display_current_datetime())
