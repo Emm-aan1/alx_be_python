@@ -23,7 +23,11 @@ def user_input():
     """
     Prompt user to enter a temperature and its unit.
     """
-    temp = float(input("Enter the temperature to convert: "))
+    try:
+        temp = float(input("Enter the temperature to convert: "))
+    except:
+        print("Invalid temperature. Please enter a numeric value.")
+    
     unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().lower()
 
     if unit == 'c':
