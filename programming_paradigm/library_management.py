@@ -22,14 +22,14 @@ class Library:
     def check_out_book(self, title):
         for book in self._books:
             if book.title == title:
-                book._is_checked_out = True
+                book.check_out()
                 # print(f"{book.title} have been checked out.")
                 return book
 
     def return_book(self, title):
         for book in self._books:
             if book.title == title:
-                book._is_checked_out = False
+                book.return_book()
                 # print(f"{book.title} have been returned.")
                 return book
 
