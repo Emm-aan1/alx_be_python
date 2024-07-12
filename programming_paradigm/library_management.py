@@ -4,6 +4,12 @@ class Book:
         self.author = author
         self._is_checked_out = False
 
+    def check_out(self):
+        self._is_checked_out = True
+
+    def return_book(self):
+        self._is_checked_out = False
+
 
 class Library:
     def __init__(self):
